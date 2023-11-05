@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPS</title>
+    <link rel="icon" href="letter-j.png">
+    <style>
+        body {
+            display:grid;
+            place-items:center;
+            background:#2b2726;
+            color:white;
+            font-family:Arial;
+        }
+        
+        .img-icon{
+            height:50px;
+        }
+        
+        .btn {
+            background:transparent;
+            border:3px solid #f0ec8b;
+            width:100px;
+            height:100px;
+            border-radius:60px;
+            margin-right:10px;
+        }
+        
+        .result {
+            font-size:25px;
+            font-weight:bold;
+            margin-top:50px;
+        }
+        
+        .score {
+            margin-top:50px;
+        }
+        
+        .reset-btn,.auto-play {
+            background:#8e43ed;
+            color:white;
+            border:none;
+            font-size:15px;
+            padding:8px 15px;
+        }
+        
+        .message {
+            display:none;
+        }
+        
+        .block {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+     <div class="main-container">
+     <h1>Final-Project: R.P.S.</h1>
+     
+     <button class="btn rock-btn">
+     <img src="Rock.png"
+      class="img-icon"></button>
+         
+     <button class="btn paper-btn">
+     <img src="Paper.png" alt=""
+     class="img-icon"></button>
+     
+     <button class="btn scissor-btn">
+     <img src="Scissor.png" alt=""
+     class="img-icon"></button>
+     
+     <p class="js-result result"></p>
+     <p class="js-pick">         
+     </p>
+     <p class="js-score score"></p>
+     
+     <button class="reset-btn">
+     Reset</button>
+     
+     <button class="auto-play">
+     Auto play</button>
+     
+     <p class="message">
+     Are you sure want to reset the score?
+     <button class="yes-btn">
+       Yes</button>
+     <button class="no-btn">
+       No</button>
+     </p>
+     </div>
+<script src="RPS.js"></script>
+</body>
+</html>
